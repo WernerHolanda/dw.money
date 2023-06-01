@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
     [disabled] {opacity: 0.6; cursor: not-allowed;}
 
     .react-modal-overlay{
-        border: solid black 5px;
+        //border: solid black 5px;
         background: rgba(0, 0, 0, 0.5);
 
         position: fixed; //essa fixed é q faz com que fique sobreposto por cima e no meio somado ao center do justify
@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 
     }
     .react-modal-content{
-        border: solid black 5px;
+        //border: solid black 5px;
         
         
 
@@ -77,5 +77,19 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         border-radius: 0.24rem;
 
+    }
+
+    .react-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        background: transparent;
+        border: 0;
+
+        transition: filter 0.2s;
+        
+        &:hover {
+            filter: brightness(0.8);
+    }
     }
 `

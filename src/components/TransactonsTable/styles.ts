@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    border: 4px black solid;
+    //border: 4px black solid;
     margin-top: 3rem;
 
     table {

@@ -34,14 +34,14 @@ export function TransactionsTable (){
                         <td>Passeios. Barreirinhas-MA </td>
                         <td className="withdraw">R$ -600</td>    
                         <td>Compras</td>
-                        <td>/09/2023</td>
+                        <td>02/09/2023</td>
                     </tr>
 
                     <tr>
                         <td>Alimentação. Barreirinhas-MA </td>
                         <td className="withdraw">R$ -500</td>    
                         <td>Compras</td>
-                        <td>/09/2023</td>
+                        <td>02/09/2023</td>
                     </tr>
                     
                     
@@ -49,7 +49,7 @@ export function TransactionsTable (){
                         <td>Hospedagem. Barreirinhas-MA </td>
                         <td className="withdraw">R$ -900</td>    
                         <td>Compras</td>
-                        <td>/09/2023</td>
+                        <td>02/09/2023</td>
                     </tr>
 
                 </tbody>
