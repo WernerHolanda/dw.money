@@ -49,4 +49,33 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     [disabled] {opacity: 0.6; cursor: not-allowed;}
+
+    .react-modal-overlay{
+        border: solid black 5px;
+        background: rgba(0, 0, 0, 0.5);
+
+        position: fixed; //essa fixed é q faz com que fique sobreposto por cima e no meio somado ao center do justify
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    
+        display: flex;
+        justify-content: center; //aqui de fato que centraliza o conteudo no meio da esquerda pra direita
+        align-items: center; // aqui que centraliza de cima pra baixo no meio
+
+    }
+    .react-modal-content{
+        border: solid black 5px;
+        
+        
+
+        width: 100%; //100% da tela limitado a 560px
+        max-width: 576px;
+        background: var(--background);
+        padding: 3rem;
+        position: relative;
+        border-radius: 0.24rem;
+
+    }
 `

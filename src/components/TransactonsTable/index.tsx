@@ -15,25 +15,41 @@ export function TransactionsTable (){
                 </thead>
             
                 <tbody>
-                    <tr>
-                        <td>Desenvolvimento de WebSite</td>
-                        <td className="deposit">R$ 12.000</td>    
-                        <td>Desenvolvilmento</td>
-                        <td>20/02/2023</td>
+                  
+                <tr>
+                        <td>Recb. Salário - Set/23</td>
+                        <td className="deposit">R$ 6.000</td>    
+                        <td>Salário</td>
+                        <td>01/09/2023</td>
                     </tr>
 
                     <tr>
-                        <td>Venc Fatura do Cartão 05/23</td>
-                        <td className="withdraw">R$ -5.000</td>    
-                        <td>Desenvolvilmento</td>
-                        <td>20/02/2023</td>
+                        <td>Passagens Aéreas Barreirinhas-MA</td>
+                        <td className="withdraw">R$ -1.500</td>    
+                        <td>Compras</td>
+                        <td>02/09/2023</td>
                     </tr>
 
                     <tr>
-                        <td>Receb. Alguel </td>
-                        <td className="deposit">R$ 2.200</td>    
-                        <td>Desenvolvilmento</td>
-                        <td>20/02/2023</td>
+                        <td>Passeios. Barreirinhas-MA </td>
+                        <td className="withdraw">R$ -600</td>    
+                        <td>Compras</td>
+                        <td>/09/2023</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alimentação. Barreirinhas-MA </td>
+                        <td className="withdraw">R$ -500</td>    
+                        <td>Compras</td>
+                        <td>/09/2023</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>Hospedagem. Barreirinhas-MA </td>
+                        <td className="withdraw">R$ -900</td>    
+                        <td>Compras</td>
+                        <td>/09/2023</td>
                     </tr>
 
                 </tbody>
