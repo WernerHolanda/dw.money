@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished'; //polished é um yarn add que usa js pra manipular e alterar as cores e efeitos do css. a usada aqui foi a darken, esta escurece o botão//
 
 export const Container = styled.div`
 
@@ -30,31 +31,30 @@ export const Container = styled.div`
 
         transition: filter 0.3s;
         &:hover {
-    filter: brightness(0.9);
+            filter: brightness(0.9);
     }
 
     }
 
-    button.Entrada {
-        margin-left: 1rem;
-        margin-right: 0.80rem;
-        margin-bottom: 0.25rem;
-        height: 3rem;
-        border-radius: 0.25rem;
-        background: var(--background);
-        color: black;
-        width: 45%;
-    }
+    //button.Entrada {
+      //  margin-left: 1rem;
+        //margin-right: 0.80rem;
+        //margin-bottom: 0.25rem;
+        //height: 3rem;
+       // border-radius: 0.25rem;
+      //  background: var(--background);
+        //color: black;
+        //width: 45%;
+   // }
 
-    button.Saida {
-        //margin: 0.20rem;
-        height: 3rem;
-        border-radius: 0.25rem;
-        background: var(--background);
-        color: black;
-        width: 45%;
-        //image-rendering: ;
-    }
+    //button.Saida {
+      //  height: 3rem;
+      //  border-radius: 0.25rem;
+      //  background: var(--background);
+      //  color: black;
+      //  width: 45%;
+        
+    //}
 
     button.Cadastrar {
         margin-top: 1rem;
@@ -62,7 +62,7 @@ export const Container = styled.div`
         border-radius: 0.25rem;
         background: var(--green);
         width: 100%;
-        //margin-right: 2rem;
+        margin-right: 2rem;
     }
 
     button.Botao-fechar {
@@ -72,3 +72,55 @@ export const Container = styled.div`
 
     }
 `;
+
+ export const TransactionTypeContainer = styled.div `
+    margin: 1rem  0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+ `
+
+ interface RadioboxProps {
+    isActive: boolean;
+    activeColor: 'green' | 'red';
+ }
+
+ const colors = {
+    green: '#33CC95',
+    red: '#E52E40'
+ };
+
+ export const RadioBox = styled.button<RadioboxProps>`
+    
+        height: 4rem;
+        border: 1px solid #d7d7d7;
+        border-radius: 0.25rem;
+        
+        background: ${(props) => props.isActive 
+        ? colors[props.activeColor] 
+        : 'transparent'
+        };
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            border-color: ${darken(0.1, '#d7d7d7')};
+            //filter: brightness(0.9);
+        }
+    
+    img {
+        height: 20px;
+        width: 20px;
+    }
+
+    span {
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1rem;
+        color: var(--text-title);
+    }
+ `;
