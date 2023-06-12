@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken } from 'polished'; //polished é um yarn add que usa js pra manipular e alterar as cores e efeitos do css. a usada aqui foi a darken, esta escurece o botão//
+import { darken, transparentize } from 'polished'; //polished é um yarn add que usa js pra manipular e alterar as cores e efeitos do css. a usada aqui foi a darken, esta escurece o botão//
 
 export const Container = styled.div`
 
@@ -79,12 +79,12 @@ export const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
 
- `
+ `;
 
  interface RadioboxProps {
-    isActive: boolean;
-    activeColor: 'green' | 'red';
- }
+    isActive: boolean;// a ideia aqui é dizer que dentro das propriedades da Radiobox, o isActiv será do tipo booleado, .'. ou estará ativo ou não estará ativo;
+    activeColor: 'green' | 'red';//activeColo será então ou verde ou vermelho
+ };
 
  const colors = {
     green: '#33CC95',
@@ -98,7 +98,7 @@ export const Container = styled.div`
         border-radius: 0.25rem;
         
         background: ${(props) => props.isActive 
-        ? colors[props.activeColor] 
+        ? transparentize (0.7, colors[props.activeColor]) 
         : 'transparent'
         };
         
