@@ -49,7 +49,7 @@ export function TransactionsTable (){
                                 <td>{transaction.category}</td>
                                 <td>
                                     {new Intl.DateTimeFormat('pt-BR').format(
-                                        new Date(transaction.createdAt)/ /* aqui teve que colocar dentro do () um new date(transaction.createdAt) pois dentro do parentese so aceita string q é o padrão da API, logo o 'new...' converte em uma data*/
+                                        new Date(transaction.createdAt)/* aqui teve que colocar dentro do () um new date(transaction.createdAt) pois dentro do parentese so aceita string q é o padrão da API, logo o 'new...' converte em uma data*/
                                     )}
                                     </td>
                             </tr>
