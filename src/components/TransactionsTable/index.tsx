@@ -1,27 +1,23 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Container } from './styles';
-import { api } from "../../services/api";
+import { TransactionsContext } from "../../TransactionsContext";
+
 
 
 //pois é obrigatório dizer quais são as propriedades da "Transaction", fazemos isso entao por essa interface.
-interface Transaction {
-    id: number;
-    title: string;
-    amount: number;
-    type: string; 
-    category: string;
-    createdAt: string;
-}
+
 
 export function TransactionsTable (){
-    const [transactions, setTransactions] = useState<Transaction[]>([]);
+    const transactions = useContext(TransactionsContext);
+    
+    /*const [transactions, setTransactions] = useState<Transaction[]>([]);
     // '<Transaction[]>' significa que eu puxo exatamente a interface, .'., o estado Transaction, que eu armazeno uma array '[]' e isso de colocar '[]' é para que eu não armazene apenas 1x transactions., mas sim várias transactions., 
     //aqui é um estado que eu criei. .'., listar na api, salvar um estado, e isso irá ficar se repetindo
     // como eu tenho um estado que será alterado, eu posso agora citar ele lá embaixo, por meio de 'transaction.map'
     useEffect(() => {
         api.get('/transactions')
         .then(response => setTransactions(response.data.transactions))//os 'response.data.transactions' esses nome.nome2.nome3 essa sequencia com pontos é para espécificar 
-    }, []);
+    }, []); */
     
     return(
         <Container>

@@ -1,9 +1,13 @@
+import { useContext } from 'react'
+import { TransactionsContext } from '../../TransactionsContext'
 import incomeImg from '../../assets/Entradas.svg'
 import outcomeImg from '../../assets/Saídas.svg'
 import totalImg from '../../assets/Total.svg'
 import { Container } from './styles'
 
 export function Summary (){
+    const transactions = useContext(TransactionsContext);//aqui é um hook do react para consumir os datos de um contexto. No caso aqui é pra consumir os dados do Transactionscontext.ts
+
     return(
         <Container>
             <div>
