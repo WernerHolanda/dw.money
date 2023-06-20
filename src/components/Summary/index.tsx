@@ -6,8 +6,9 @@ import totalImg from '../../assets/Total.svg'
 import { Container } from './styles'
 
 export function Summary (){
-    const transactions = useContext(TransactionsContext);//aqui é um hook do react para consumir os datos de um contexto. No caso aqui é pra consumir os dados do Transactionscontext.ts
+    const { transactions }= useContext(TransactionsContext);//aqui é um hook do react para consumir os datos de um contexto. No caso aqui é pra consumir os dados do Transactionscontext.ts
 
+    console.log(transactions);
     return(
         <Container>
             <div>
