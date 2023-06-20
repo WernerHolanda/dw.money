@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect, ReactNode } from 'react';
-import { api } from './services/api';
+import { createContext, useState, useEffect, ReactNode, useContext } from 'react';
+import { api } from '../services/api';
 
 
 //a interface serve para resolver quando precisamos dizer qual o TYPE da informação.
@@ -42,7 +42,7 @@ interface TransactionsContextData {
 type TransactionInput = Pick<Transaction, 'title' | 'amount' | 'type' | 'category'>;
 
 
-export const TransactionsContext = createContext<TransactionsContextData>(
+const TransactionsContext = createContext<TransactionsContextData>(
     {} as TransactionsContextData
     /* aqui é uma forma de enganar o REACT, pois eu basicamente estou dizendo que 'tem sim o formato do
      TransactionContextData.*/
@@ -88,4 +88,9 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
             {children}
         </TransactionsContext.Provider>
     );
+}
+
+export function useTransactions() {
+    const context = useContext(TransactionsContext);
+    return context;
 }

@@ -3,11 +3,11 @@ import { GlobalStyle } from './styles/global';
 import { Header } from './components/Header';
 
 import Modal from 'react-modal';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { NewTransactionModal } from './components/NewTransactionModal';
 
 import { Dashboard } from './components/Dashboard';
-import { TransactionsProvider } from './TransactionsContext';
+import { TransactionsProvider } from './hooks/useTransactions';
 
 const Title = styled.h1`
   font-size: 64px;

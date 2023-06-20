@@ -1,6 +1,7 @@
-import { useContext } from "react";
+
 import { Container } from './styles';
-import { TransactionsContext } from "../../TransactionsContext";
+
+import { useTransactions } from '../../hooks/useTransactions';
 
 
 
@@ -11,7 +12,7 @@ export function TransactionsTable (){
     //já o useState significa 'salvar no estado o que eu busquei na api'
     //useEffect significa 'buscar na api'
    
-    const { transactions }= useContext(TransactionsContext);
+    const { transactions }= useTransactions() 
     
     return(
         <Container>
