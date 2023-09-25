@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal'; 
 import logoImg from '../../assets/Logo.svg';
 
-import { Container, Content } from './style';
+import { Container, Content } from './styles';
 
 // a inferface irá definir as propriedades do que eu quero definir - no caso é o HeaderProps - 
 // o professor diz que começa com "on" meio como um padrão quando está recebendo uma funação - 
