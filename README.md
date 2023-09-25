@@ -31,7 +31,7 @@ Programa exclusivo desenvolvido por Werner Holanda, promovido tomando por base o
 <h3>🔖 Abaixo, demonstração da feature de Income/Entrada, atualizando os valores de resumo ao topo e na lista de transações:
 
 <p align="center">
-  <img alt="projeto My Social Links" src="income - DW MONEY - Pessoal — Microsoft_ Edge 2023-09-25 10-51-03 - Trim.gif" height="350em">
+  <img alt="Transactions Money" src="income - DW MONEY - Pessoal — Microsoft_ Edge 2023-09-25 10-51-03 - Trim.gif" height="350em">
 </p>
 
 <h3>🔖Em seguida, apresento a feature de Outcome/Saída, atualizando os valores de Resumo ao topo e a lista de transações:
