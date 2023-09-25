@@ -1,6 +1,6 @@
 # dw.money.transactions:
 
-<h1 align="center"> Project Name: Diego & Werner Transactions Money </h1>
+<h1 align="center"> Project Name: Werner Transactions Money </h1>
 
 <p align="center">
 Programa exclusivo desenvolvido por Werner Holanda, promovido tomando por base o projeto fornecido pela Rocketseat para ensino de tecnologias WEB - No BootCamp "Ignite - React.JS". <br/>
@@ -27,9 +27,12 @@ Programa exclusivo desenvolvido por Werner Holanda, promovido tomando por base o
 - Por fim, demonstro a possibilidade do botão componente com funcionalidade que possibilita adicionar Novas Transações; 
     
 </h3>
+
 <p align="center">
-  <img src="https://github.com/WernerHolanda/My-social-links/blob/main/v.0.3.2%20-my-social-links/.github/dark-light.gif" heght="590em">
+  <img alt="projeto My Social Links" src="income - DW MONEY - Pessoal — Microsoft_ Edge 2023-09-25 10-51-03 - Trim.gif" height="590em">
 </p>
+
+<br>
 <br>
 
 ## 🚀 Tecnologias
